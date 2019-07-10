@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		89DB4AC122D5FAAF00590D5F /* iosAmplify.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 89DB4ABF22D5FAAF00590D5F /* iosAmplify.xcdatamodeld */; };
 		89DB4AC322D5FAB000590D5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89DB4AC222D5FAB000590D5F /* Assets.xcassets */; };
 		89DB4AC622D5FAB000590D5F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89DB4AC422D5FAB000590D5F /* LaunchScreen.storyboard */; };
+		89DB4ACE22D6060B00590D5F /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 89DB4ACD22D6060B00590D5F /* awsconfiguration.json */; };
 		C389AA0E0C6830E6EC35090D /* Pods_iosAmplify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C18B42376AC9F7F99C31BD5 /* Pods_iosAmplify.framework */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		89DB4AC222D5FAB000590D5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89DB4AC522D5FAB000590D5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89DB4AC722D5FAB000590D5F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89DB4ACD22D6060B00590D5F /* awsconfiguration.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = awsconfiguration.json; sourceTree = SOURCE_ROOT; };
 		CBB2ECD0903B9E5B8CEEDFFC /* Pods-iosAmplify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosAmplify.debug.xcconfig"; path = "Target Support Files/Pods-iosAmplify/Pods-iosAmplify.debug.xcconfig"; sourceTree = "<group>"; };
 		DA82161A97E09FCA7D7C74DD /* Pods-iosAmplify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iosAmplify.release.xcconfig"; path = "Target Support Files/Pods-iosAmplify/Pods-iosAmplify.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,7 +58,6 @@
 				CBB2ECD0903B9E5B8CEEDFFC /* Pods-iosAmplify.debug.xcconfig */,
 				DA82161A97E09FCA7D7C74DD /* Pods-iosAmplify.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -81,6 +82,7 @@
 		89DB4AB722D5FAAF00590D5F /* iosAmplify */ = {
 			isa = PBXGroup;
 			children = (
+				89DB4ACD22D6060B00590D5F /* awsconfiguration.json */,
 				89DB4AB822D5FAAF00590D5F /* AppDelegate.swift */,
 				89DB4ABA22D5FAAF00590D5F /* ViewController.swift */,
 				89DB4ABC22D5FAAF00590D5F /* Main.storyboard */,
@@ -103,6 +105,7 @@
 				89DB4AB122D5FAAF00590D5F /* Sources */,
 				89DB4AB222D5FAAF00590D5F /* Frameworks */,
 				89DB4AB322D5FAAF00590D5F /* Resources */,
+				DB275086717A77B8C0A35C22 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +154,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89DB4ACE22D6060B00590D5F /* awsconfiguration.json in Resources */,
 				89DB4AC622D5FAB000590D5F /* LaunchScreen.storyboard in Resources */,
 				89DB4AC322D5FAB000590D5F /* Assets.xcassets in Resources */,
 				89DB4ABE22D5FAAF00590D5F /* Main.storyboard in Resources */,
@@ -180,6 +184,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DB275086717A77B8C0A35C22 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iosAmplify/Pods-iosAmplify-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iosAmplify/Pods-iosAmplify-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iosAmplify/Pods-iosAmplify-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

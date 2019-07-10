@@ -8,13 +8,30 @@
 
 import UIKit
 
+import AWSAuthCore
+import AWSAuthUI
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        self.showSignIn()
     }
 
-
+    func showSignIn() {
+        if !AWSSignInManager.sharedInstance().isLoggedIn {
+            if let naviController = self.navigationController {
+                AWSAuthUIViewController.presentViewController(with: naviController, configuration: nil, completionHandler: { (provider: AWSSignInProvider, error: Error?) in
+                    if error != nil {
+                        print("Error occured: \(String(describing: error))")
+                    }else{
+                        print("Logged in with provider: \(provider.identityProviderName) with Token: \(provider.token())")
+                    }
+                })
+            }
+        }
+    }
+    
 }
 

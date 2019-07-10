@@ -1,3 +1,68 @@
-PODFILE CHECKSUM: b5fdd7ca0865e19ff9dab229941c9b94112cc21a
+PODS:
+  - AWSAuthCore (2.9.10):
+    - AWSCore (= 2.9.10)
+  - AWSAuthUI (2.9.10):
+    - AWSAuthCore (= 2.9.10)
+    - AWSCore (= 2.9.10)
+  - AWSCognitoIdentityProvider (2.9.10):
+    - AWSCognitoIdentityProviderASF (= 1.0.1)
+    - AWSCore (= 2.9.10)
+  - AWSCognitoIdentityProviderASF (1.0.1)
+  - AWSCore (2.9.10)
+  - AWSFacebookSignIn (2.9.10):
+    - AWSAuthCore (= 2.9.10)
+    - FBSDKCoreKit (<= 4.42)
+    - FBSDKLoginKit (<= 4.42)
+  - AWSMobileClient (2.9.10):
+    - AWSAuthCore (= 2.9.10)
+    - AWSCognitoIdentityProvider (= 2.9.10)
+  - AWSUserPoolsSignIn (2.9.10):
+    - AWSAuthCore (= 2.9.10)
+    - AWSCognitoIdentityProvider (= 2.9.10)
+  - Bolts (1.9.0):
+    - Bolts/AppLinks (= 1.9.0)
+    - Bolts/Tasks (= 1.9.0)
+  - Bolts/AppLinks (1.9.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.9.0)
+  - FBSDKCoreKit (4.42.0):
+    - Bolts (~> 1.9)
+  - FBSDKLoginKit (4.42.0):
+    - FBSDKCoreKit
+
+DEPENDENCIES:
+  - AWSAuthUI
+  - AWSFacebookSignIn
+  - AWSMobileClient
+  - AWSUserPoolsSignIn
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AWSAuthCore
+    - AWSAuthUI
+    - AWSCognitoIdentityProvider
+    - AWSCognitoIdentityProviderASF
+    - AWSCore
+    - AWSFacebookSignIn
+    - AWSMobileClient
+    - AWSUserPoolsSignIn
+    - Bolts
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+
+SPEC CHECKSUMS:
+  AWSAuthCore: d6d222a7eeae403f968afb5b9b3975bd96340d91
+  AWSAuthUI: 5d6e6c81c5a2cc4dbd9a9657eeea649894dab164
+  AWSCognitoIdentityProvider: 5e72467f174a970e9d357fc06666e3f32e6eda70
+  AWSCognitoIdentityProviderASF: f94f1a502e72ef3d0a1de93e10bf7a79c8698118
+  AWSCore: 22b6bbc6761ca9981d878155d11bc02edd681a64
+  AWSFacebookSignIn: 8e5471af42246b57b581d681649d50d930baf230
+  AWSMobileClient: a0768be5b34a5a2eb39fd3fcd5d4f14125d4ebbb
+  AWSUserPoolsSignIn: 825d6f5c6beaa6f3b11d863d4f43031b1da5e6b0
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  FBSDKCoreKit: aa42f1c384775f8b075f53a43080474278e9701d
+  FBSDKLoginKit: 373830c68aa48c9e8f0bfed93a3e32d2ca8963a0
+
+PODFILE CHECKSUM: d65ec32176f9a3a438e08ab6faa150025f242895
 
 COCOAPODS: 1.7.1
